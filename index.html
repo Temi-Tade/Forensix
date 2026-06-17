@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>Forensix</title>
+</head>
+<body>
+    <header></header>
+    <div id="uploader">
+        <label for="file">Upload a File</label>
+        <input id="file" type="file" onchange="loadFile(this)">
+    </div>
+
+    <div id="image-data">
+        <div>
+            <h2>Bytes (Hex)</h2>
+            <textarea name="data-hex" id="data-hex" rows="8" cols="8"></textarea>
+        </div>
+        <div>
+            <h2>Decoded Hex (UTF-8)</h2>
+            <textarea name="data-string" id="data-string" rows="8" cols="8" readonly></textarea>
+        </div>
+        <div>
+            <h2>Media</h2>
+            <div id="media"></div>
+            <div id="dl">
+                <button id="dl-btn">Download &darr;</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
